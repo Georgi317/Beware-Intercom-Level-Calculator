@@ -4,53 +4,7 @@ Add-Type -AssemblyName System.Drawing
 
 # Список устройств (добавьте свои)
 $Devices = @(
-    @{ Name = "Островский, Подъезд 1"; IP = "213.27.96.8:5543"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Нансена 109/5, Подъезд 2"; IP = "213.27.96.8:5545"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Нансена 109/5, Подъезд 1"; IP = "213.27.96.8:5545"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Пушкин, Подъезд 4"; IP = "213.27.96.8:5549"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Пушкин, Подъезд 3"; IP = "213.27.96.8:5551"; User = "admin"; Pass = "SK10vdom3" },
-    @{ Name = "Пушкин, Подъезд 2"; IP = "213.27.96.8:5557"; User = "admin"; Pass = "SK10vdom3" },
-    @{ Name = "Пушкин, Подъезд 1"; IP = "213.27.96.8:5559"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Нансена 109/6, Подъезд 1"; IP = "213.27.96.8:5563"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Нансена 109/6, Подъезд 2"; IP = "213.27.96.8:5565"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Нансена 109/6, Подъезд 3"; IP = "213.27.96.8:5567"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Нансена 109/6, Подъезд 4"; IP = "213.27.96.8:5569"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Ленина, Подъезд 1"; IP = "213.27.96.8:5571"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Ленина, Подъезд 2"; IP = "213.27.96.8:5575"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Ленина, Подъезд 3"; IP = "213.27.96.8:5577"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Соколова 68, СТР1, Подъезд 1"; IP = "213.27.96.8:5587"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Соколова 68, СТР1, Подъезд 2"; IP = "213.27.96.8:5589"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Соколова 68, СТР1, Подъезд 3"; IP = "213.27.96.8:5591"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Соколова 68, СТР1, Подъезд 4"; IP = "213.27.96.8:5593"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Соколова 68, СТР1, Подъезд 5"; IP = "213.27.96.8:5595"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Соколова 68, СТР2, Подъезд 1"; IP = "213.27.96.8:5597"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Соколова 68, СТР2, Подъезд 2"; IP = "213.27.96.8:5599"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Соколова 68, СТР2, Подъезд 3"; IP = "213.27.96.8:5601"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Стабильная 3, СТР1, Подъезд 1"; IP = "213.27.96.8:5625"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Стабильная 3, СТР1, Подъезд 2"; IP = "213.27.96.8:5633"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Стабильная 3, СТР1, Подъезд 3"; IP = "213.27.96.8:5635"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Стабильная 3, СТР2, Подъезд 1"; IP = "213.27.96.8:5639"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Стабильная 3, СТР2, Подъезд 2"; IP = "213.27.96.8:49152"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Стабильная 3, СТР2, Подъезд 3"; IP = "213.27.96.8:49158"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Стабильная 3, СТР3, Подъезд 1"; IP = "213.27.96.8:5613"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Стабильная 3, СТР3, Подъезд 2"; IP = "213.27.96.8:5619"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Нансена 109/2, Подъезд 1"; IP = "213.27.106.67:1020"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Нансена 109/2, Подъезд 2"; IP = "213.27.106.67:1021"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Нансена 109/2, Подъезд 3"; IP = "213.27.106.67:1022"; User = "admin"; Pass = "SK10vdom3" },
-    @{ Name = "Нансена 109/2, Подъезд 4"; IP = "213.27.106.67:1023"; User = "admin"; Pass = "SK10vdom3" },
-    @{ Name = "Нансена 109/3, Подъезд 1"; IP = "213.27.106.84:1020"; User = "admin"; Pass = "SK10vdom3" },
-    @{ Name = "Нансена 109/3, Подъезд 2"; IP = "213.27.106.84:1021"; User = "admin"; Pass = "SK10vdom3" },
-    @{ Name = "Нансена 109/3, Подъезд 3"; IP = "213.27.106.84:1022"; User = "admin"; Pass = "SK10vdom3" },
-    @{ Name = "Гвардейский 11/1"; IP = "213.27.106.61:1020"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Гвардейский 11/3"; IP = "213.27.106.61:1022"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Гвардейский 11/4"; IP = "213.27.96.8:5623"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Соборный 98, Подъезд 1"; IP = "213.27.96.8:5609"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Соборный 98, Подъезд 2"; IP = "213.27.96.8:5607"; User = "admin"; Pass = "SK10vdom3" },
-    @{ Name = "Соборный 98, Подъезд 3"; IP = "213.27.96.8:5605"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Комарова 1и, Подъезд 1"; IP = "213.27.96.8:5621"; User = "admin"; Pass = "SK10vdom3" },
-    @{ Name = "Элеваторный 10, Подъезд 1"; IP = "213.27.106.65:5543"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Элеваторный 10, Подъезд 2"; IP = "213.27.106.65:5544"; User = "admin"; Pass = "SK10domofon10" },
-    @{ Name = "Элеваторный 12, Подъезд 1"; IP = "213.27.106.64:5541"; User = "admin"; Pass = "SK10domofon10" }
+    @{ Name = "Наименование, ЖК"; IP = "IP_адрес домофона"; User = "admin"; Pass = "Пароль Вашего Домофона" },
 )
     
 
@@ -436,4 +390,5 @@ $btnSet1.Add_Click({
 
 
 $form.Add_Shown({ $form.Activate() })
+
 [void]$form.ShowDialog()
